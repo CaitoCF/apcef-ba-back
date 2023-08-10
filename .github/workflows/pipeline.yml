@@ -30,7 +30,7 @@ jobs:
       run: dotnet restore
     - name: Build
       run: |
-        cd src/Apcef.Api
+        cd src
         dotnet build --no-restore
     - name: Package
       run: |
