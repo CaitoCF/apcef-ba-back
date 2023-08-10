@@ -29,7 +29,9 @@ jobs:
         cd src/Apcef.Api
         dotnet build --no-restore
     - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: |
+        cd src/Apcef.Api
+        dotnet test --no-build --verbosity normal
     - name: Restore dependencies
       run: |
         cd src/Apcef.Api
