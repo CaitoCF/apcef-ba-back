@@ -10,7 +10,7 @@ WORKDIR /src
 COPY ["Apcef.Api.csproj", "Apcef.Api/"]
 RUN dotnet restore "Apcef.Api/Apcef.Api.csproj"
 COPY . .
-WORKDIR "/src/Apcef.Api"
+WORKDIR "/src"
 RUN dotnet build "Apcef.Api.csproj" -c Release -o /app/build
 
 FROM build AS publish
