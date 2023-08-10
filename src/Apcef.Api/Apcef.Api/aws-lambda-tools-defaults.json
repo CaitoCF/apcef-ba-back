@@ -1,6 +1,6 @@
 {
     "Information": [],
     "configuration": "Release",
-    "framework":".NETCoreApp,Version=v6.0",
+    "framework":"net6.0",
     "output-package":"bin/serverless/deploy-package.zip"
 }
