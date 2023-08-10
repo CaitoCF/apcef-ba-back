@@ -29,7 +29,9 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
-      run: dotnet build --no-restore
+      run: |
+        cd src/Apcef.Api
+        dotnet build --no-restore
     - name: Package
       run: |
         cd src/Apcef.Api
