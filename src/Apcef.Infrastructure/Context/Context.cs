@@ -25,6 +25,11 @@ namespace Apcef.Infrastructure.Context
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             new ModalityMap(modelBuilder);
+            new RoundMap(modelBuilder);
+            new TeamMap(modelBuilder);
+            new GroupMap(modelBuilder);
+            new BranchMap(modelBuilder);
+            new MatchMap(modelBuilder);
 
         }
 
@@ -39,6 +44,11 @@ namespace Apcef.Infrastructure.Context
         }
 
         public DbSet<Modality> modalities { get; private set; }
+        public DbSet<Round> rounds { get; private set; }
+        public DbSet<Team> teams { get; private set; }
+        public DbSet<Group> groups { get; private set; }
+        public DbSet<Branch> branches { get; private set; }
+        public DbSet<Match> matches { get; private set; }
 
     }
 }

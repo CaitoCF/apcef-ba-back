@@ -7,7 +7,7 @@ namespace Apcef.Infrastructure.TableMapping
     {
         public ModalityMap(ModelBuilder modelBuilder)
         {
-            ConfigureDefaults<Modality>("tb_sport_genre", modelBuilder);
+            ConfigureDefaults<Modality>("tb_modality", modelBuilder);
 
             modelBuilder
                 .Entity<Modality>()

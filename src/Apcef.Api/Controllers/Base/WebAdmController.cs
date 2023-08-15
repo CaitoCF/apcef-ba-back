@@ -1,9 +1,12 @@
-﻿using Apcef.Domain.Abstractions.Repository;
+﻿using Apcef.Api.Attributes;
+using Apcef.Domain.Abstractions.Repository;
+using Apcef.Domain.Abstractions.Repository.General;
 using Apcef.Domain.Entities.Base;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Apcef.Api.Controllers.Base
 {
+    [ApiKey]
     public abstract class WebAdmController<T> : ControllerBase where T : Entity
     {
         private readonly IRepository<T> _repository;

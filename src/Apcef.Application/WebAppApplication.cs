@@ -18,9 +18,7 @@ namespace Apcef.Application
 
         public async Task<IEnumerable<GetAllModalitiesResponse>> GetAllModalities()
         {
-            var result = await Task.FromResult(_repository.GetAllModalities());
-
-            return result;
+            throw new NotImplementedException();
         }
     }
 }
