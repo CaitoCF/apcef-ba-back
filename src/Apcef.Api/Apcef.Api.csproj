@@ -11,6 +11,12 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.18.1" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Apcef.Domain\Apcef.Domain.csproj" />
+    <ProjectReference Include="..\Apcef.IoC\Apcef.IoC.csproj" />
   </ItemGroup>
 
 </Project>
