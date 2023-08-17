@@ -7,7 +7,6 @@ namespace Apcef.Api.Controllers
 {
     [ApiController]
     [Route("/v1/app-data/")]
-    [ApiKey]
     public class AppDataController : ControllerBase
     {
         private readonly IAppDataApplication _appDataApplication;
@@ -19,8 +18,7 @@ namespace Apcef.Api.Controllers
             _appDataApplication = appDataApplication;
         }
 
-        [HttpPost("refresh-data")]
-        [ApiKey]
+        [HttpPost("refresh-app-cache")]
         public async Task<IActionResult> RefreshData(CancellationToken cancellationToken)
         {
             var result = await _appDataApplication.UpdateRepositoryData(cancellationToken);
