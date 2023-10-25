@@ -53,8 +53,8 @@
               "type": "Microsoft.ApiManagement/service",
               "location": "[parameters('resourceLocation')]",
               "properties": {
-                "publisherEmail": "rendjoselito@hotmail.com",
-                "publisherName": "Joselito Rend",
+                "publisherEmail": "caio.caldeiraf@gmail.com",
+                "publisherName": "Caio Farias",
                 "notificationSenderEmail": "apimgmt-noreply@mail.windowsazure.com",
                 "hostnameConfigurations": [
                   {
